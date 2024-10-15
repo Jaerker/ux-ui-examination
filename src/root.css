@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap');
+
+:root{
+    --f-righteous: 'Righteous', sans-serif;
+    --f-pt-sans: 'PT Sans', sans-serif;
+
+    --c-black: #000000;
+    --c-darker-gray: #222222;
+    --c-dark-gray: #555555;
+    --c-gray: #EEEEEE;
+
+    --c-white: #FFFFFF;
+    --c-white-t2: #FFFFFF05;
+    --c-white-t3: #FFFFFF08;
+    --c-white-t4: #FFFFFF0A;
+    --c-white-t60: #FFFFFF99;
+
+}
