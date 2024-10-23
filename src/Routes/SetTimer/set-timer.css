@@ -21,6 +21,7 @@
     width: 15vw;
     cursor:pointer;
 }
+
 .set-minutes__section{
     display:flex;
     flex-direction:column;
@@ -65,12 +66,36 @@
     height: 8vw;
     border-radius: 3px;
     border: 2px solid var(--c-black);
+    transition: background .25s ease;
 }
 .checkbox__box--checked{
     background: var(--c-black);
     border: 2px solid var(--c-black);
+    animation: checkboxShake .25s ease;
+}
+.checkbox__box--unchecked{
+    background: transparent;
+    border: 2px solid var(--c-black);
 }
 
+
+@keyframes checkboxShake{
+    0%{
+        transform:rotate(0deg) scale(1);
+    }
+    25%{
+        transform:rotate(-10deg) scale(1.25);
+    }
+    50%{
+        transform:rotate(10deg) scale(1.25);
+    }
+    75%{
+        transform:rotate(-10deg) scale(1.25);
+    }
+    100%{
+        transform:rotate(0deg) scale(1);
+    }
+}
 
 .checkbox__icon{
     width:5vw;

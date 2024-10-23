@@ -12,7 +12,6 @@ import { motion, useAnimationControls } from 'framer-motion';
 const SetTimer = () => {
     const navigate = useNavigate();
     const minutesControls = useAnimationControls();
-    const secondCheckboxControls = useAnimationControls();
     const [minutes, setMinutes] = useState(0);
     const [checkedValues, setCheckedValues] = useState({
         intervals: false,
