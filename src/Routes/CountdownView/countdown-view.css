@@ -17,6 +17,10 @@
     align-items:center;
     justify-content:center;
 }
+.interval__check{
+    color: var(--c-darker-gray);
+    text-align:center;
+}
 .color-spreader__wrapper{
     position:fixed;
     top:0;

@@ -30,6 +30,7 @@ const AlarmView = () => {
 
     useEffect(() => {
         if(location.state.intervals){
+
             if(!location.state.breakPerInterval)
                 navigate('/timer/countdown', {state:{...location.state, time: Date.now() + (location.state.minutes*60000)}})
         }

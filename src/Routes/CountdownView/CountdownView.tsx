@@ -14,6 +14,7 @@ const CountdownView = () => {
     const checkClicked = sessionStorage.getItem('clicked');
     const coverColorControls = useAnimationControls();
     const minutes = location.state.time ?? -1; 
+    const intervalNumber = sessionStorage.getItem('intervalNumber');
 
     const [fadeOut, setFadeOut] = useState(false); 
     const [currentView, setCurrentView] = useState(location.state?.menuChoice ?? 'analog');
@@ -45,6 +46,8 @@ const CountdownView = () => {
     useEffect(() => {
         if(typeof(minutes) !== 'number' )
             navigate('/timer/set');
+        if(intervalNumber === null && location.state.intervals)
+            sessionStorage.setItem('intervalNumber', '1');
     }, []);
 
     useEffect(()=>{
@@ -56,6 +59,8 @@ const CountdownView = () => {
             coverColorControls.start('fadeOut')
             setTimeout(() => {
                 sessionStorage.setItem('clicked', 'true');
+                if(intervalNumber != null)
+                    sessionStorage.setItem('intervalNumber', (parseInt(intervalNumber)+1).toString());
                 navigate('/timer/finished', {state:{ ...location.state, countdown:Date.now()+(5*60000)}});
             }, 500)
         }
@@ -63,6 +68,7 @@ const CountdownView = () => {
     
     const handleButtonPress = () => {
         navigate('/timer/set');
+        sessionStorage.removeItem('intervalNumber');
         sessionStorage.setItem('clicked', 'true');
     }
     
@@ -103,8 +109,10 @@ const CountdownView = () => {
                             <TextTimer counter = {counter}/>
                     </motion.section>)}
             </AnimatePresence>            
-
             <section className='button-wrapper'>
+                
+                {intervalNumber && (<h2 className='interval__check'>INTERVAL NR {intervalNumber}</h2>)}
+
                 <Button buttonType='dark-gray' onClick={handleButtonPress} content='ABORT TIMER' />
             </section>
 
