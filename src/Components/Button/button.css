@@ -1,0 +1,29 @@
+.button{
+    position:relative;
+    font-size: 6vw;
+    letter-spacing: .8vw;
+    border:none;
+    padding: 4vw 3vw;
+    font-weight:700;
+    border-radius:5px;
+    background:transparent;
+}
+.color-spreader__wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: #EEEEEE;
+    pointer-events: none;
+
+}
+@media (min-width:560px){
+    .button{
+        font-size: 2rem;
+        letter-spacing: .5rem;
+        margin-top:3rem;
+        padding: 1.45rem 1rem;
+    }
+
+}

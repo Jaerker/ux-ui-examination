@@ -1,0 +1,115 @@
+.set-timer-wrapper{
+    width:75%;
+    max-width:600px;
+    height:100%;
+
+    display:flex;
+    gap:1rem;
+    flex-direction:column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom:10vh;
+}
+
+.set-minutes__wrapper{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+.set-minutes__icon{
+    width: 15vw;
+    cursor:pointer;
+}
+.set-minutes__section{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.set-minutes__value{
+    font-size: 25vw;
+    font-weight:700;
+    line-height:25vw;
+}
+.set-minutes__sub-title{
+    color: var(--c-darker-gray);
+    opacity:0.6;
+    font-size: 4.5vw;
+    font-weight:700;
+    letter-spacing: 1vw;
+}
+.checkbox-choices__wrapper{
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    gap:1rem;
+    margin-top: 10vw;
+    margin-bottom:10vw;
+}
+.checkbox{
+    display:flex;
+    width:100%;
+    justify-content: start;
+    row-gap: 1rem;
+    column-gap: .5rem;
+    padding: .5rem 0;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+}
+.checkbox__box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 3px;
+    border: 2px solid var(--c-black);
+}
+.checkbox__box--checked{
+    background: var(--c-black);
+    border: 2px solid var(--c-black);
+}
+
+
+.checkbox__icon{
+    width:5vw;
+    height:5vw;
+}
+.checkbox__label{
+    font-size: 5.5vw;
+    letter-spacing: .2vw;
+    color: var(--c-darker-gray);
+}
+@media (min-width: 560px){
+    .set-minutes__icon{
+        width: 10vw;
+        cursor:pointer;
+    }
+        
+    .set-minutes__value{
+        font-size: 15rem;
+        font-weight:700;
+        line-height:15rem;
+    }
+    .set-minutes__sub-title{
+        font-size: 2.5rem;
+        font-weight:700;
+        letter-spacing: .5rem;
+    }
+    .checkbox-choices__wrapper{
+        margin-top: 5rem;
+    }
+    .checkbox__label{
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+    }
+    .checkbox__box{
+        width: 3rem;
+        height:3rem;
+    }
+    .checkbox__icon{
+        width: 2rem;
+        height:2rem;
+    }
+}

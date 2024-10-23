@@ -5,14 +5,35 @@
     --f-pt-sans: 'PT Sans', sans-serif;
 
     --c-black: #000000;
+    --c-black-t60: #00000089;
+    --c-black-t10: #00000010;
     --c-darker-gray: #222222;
     --c-dark-gray: #555555;
     --c-gray: #EEEEEE;
 
     --c-white: #FFFFFF;
+    --c-white-t1: #FFFFFF02;
     --c-white-t2: #FFFFFF05;
     --c-white-t3: #FFFFFF08;
     --c-white-t4: #FFFFFF0A;
     --c-white-t60: #FFFFFF99;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--f-pt-sans);
+
+}
+
+.main-wrapper{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    background-color: var(--c-gray);
+    overflow:hidden;    
+
 
 }

@@ -1,0 +1,29 @@
+.button-wrapper{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    bottom:0;
+    padding-bottom:3rem;
+}
+
+.countdown-view__wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.color-spreader__wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: #EEEEEE;
+    pointer-events: none;
+
+}

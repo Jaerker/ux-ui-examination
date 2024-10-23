@@ -1,0 +1,30 @@
+.loading-wrapper{
+    width:100%;
+    height:100%;
+    background-color: var(--c-black);
+    color: var(--c-white);
+    display:flex;
+    gap:1rem;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+.logo-title{
+    font-family: var(--f-righteous);
+    letter-spacing: .3rem;
+    text-align:center;
+    font-weight:100;
+}
+.logo-subtitle{
+    letter-spacing: .1rem;
+    font-weight:400;
+}
+.color-spreader__wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: #EEEEEE;
+    pointer-events: none;
+}

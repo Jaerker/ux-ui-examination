@@ -1,0 +1,41 @@
+
+.analog-clock{
+    position:relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin:auto;
+    height:90vw;
+    width:90vw;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius:100%;
+    /* border: dashed 5px black; */
+
+}
+.analog-clock__frame{
+    background-image: url("../../assets/clock-frame.svg");
+    background-size: cover;
+    height:90vw;
+    width:90vw;
+    max-width: 500px;
+    max-height: 500px;
+}
+.minutes-hand,
+.seconds-hand{
+    height:45%;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    offset-anchor: bottom center;
+    transform:translateY(-50%);
+}
+.seconds-hand{
+    height:40%;
+    transform:translateY(-53%);
+}
+
